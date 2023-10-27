@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -31,36 +37,37 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/f4c5651088.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Tanja Sauer</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="index.html">Home </a>
-            <a class="nav-item nav-link active" href="about.html"
-              >About me <span class="sr-only">(current)</span></a
-            >
-            <a class="nav-item nav-link" href="about.html#contact">Work</a>
-            <a class="nav-item nav-link" href="about.html#contact"
-              >Contact me</a
-            >
-          </div>
-        </div>
-      </div>
-    </nav>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/" title="Homepage"
+          ><img
+            src="images/logo_2.png"
+            class="logo d-none d-md-block"
+            alt="Tanja Logo"
+          />
+        </a>
+        <ul>
+          <li>
+            <a href="/" title="Homepage"> Home</a>
+          </li>
+          <li class="active">
+            <a href="/about.html" title="About Tanja"> About</a>
+          </li>
+          <li>
+            <a href="/work.html" title="Tanja's work"> Work</a>
+          </li>
+          <li>
+            <a href="/contact.html" title="Contact Tanja"> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="row">
         <div class="col-lg-6">
@@ -68,11 +75,11 @@
             <h1 class="mb-4">Hi, I'm Tanja Sauer</h1>
             <h2 class="mb-4">Front-end developer based in Germany</h2>
             <p class="mb-5">
-              Hi, I'm Tanja Sauer, and I graduated from Pixlvisn in 2020 as a 3D
-              Artist. I also have a degree My interests are in Front End
-              Engineering, and I love to create beautiful and performant
-              products with delightful user experiences. Feel free to contact me
-              if you have any questions."
+              Hello, my name is Tanja Sauer, I'm from Germany and currently
+              studying coding with SheCodes to become a front-end developer. I'm
+              always looking for growth and learn opportunities. Please check
+              out my projects and feel free to contact me if you have any
+              questions.
             </p>
             <a href="/work.html" class="btn btn-branding">See my projects</a>
           </div>
@@ -98,61 +105,32 @@
           </a>
         </div>
       </div>
-      <div class="d-flex justify-content-center mb-5">
-        <a
-          href="mailto:tanja.sauer@live.de"
-          class="email-link"
-          title="Email Tanja"
-        >
-          tanja.sauer@live.de
-        </a>
-      </div>
-
-      /* noch verbinden!!!*/
-
       <div class="social-links d-flex justify-content-center">
-        <a href="#" target="_blank" title="GitHub Profile">
+        <a
+          href="https://github.com/TaSaCoding"
+          target="_blank"
+          title="GitHub Profile"
+        >
           <i class="fab fa-github"></i>
         </a>
-        <a href="#" target="_blank" title="instragram Profile">
+        <a
+          href="https://www.instragram.com/tanja.sauer.design"
+          target="_blank"
+          title="instragram Profile"
+        >
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="#" target="_blank" title="Twitter Profile">
-          <i class="fab fa-twitter"></i>
+        <a
+          href="https://www.instragram.com/tanja.sauer.design"
+          target="_blank"
+          title="LinkedIn Profile"
+        >
+          <i class="fa-brands fa-linkedin"></i>
         </a>
       </div>
-      <p class="text-center mt-5">
-        This website was coded by Tanja Sauer, and is
-        <a href="#" target="_blank"> open-sourced </a>
-      </p>
+      <p class="text-center mt-5">Tanja Sauer - 2023</p>
     </footer>
-
-    /*link to shecodes side
-    https://www.shecodes.io/graduates/94045-tanja-sauer*/
   </body>
 </html>
 
-/*
-<div class="container">
-  <nav class="d-flex justify-content-between">
-    <a href="/" title="Homepage">
-      <img src="#" class="logo d-none d-md-block" alt="Tanja Logo" />
-      <img src="#" class="logo d-block d-md-none" alt="Tanja Logo" />
-    </a>
-    <ul>
-      <li>
-        <a href="/" title="Homepage"> Home</a>
-      </li>
-      <li class="active">
-        <a href="/about.html" title="About Tanja"> About</a>
-      </li>
-      <li>
-        <a href="/work.html" title="Tanja's work"> Work</a>
-      </li>
-      <li>
-        <a href="/contact.html" title="Contact Tanja"> Contact</a>
-      </li>
-    </ul>
-  </nav>
-</div>
-*/
+/*link to shecodes side https://www.shecodes.io/graduates/94045-tanja-sauer*/

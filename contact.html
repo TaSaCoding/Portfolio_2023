@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -31,48 +34,156 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/f4c5651088.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/" title="Homepage"
+          ><img
+            src="images/logo_2.png"
+            class="logo d-none d-md-block"
+            alt="Tanja Logo"
+          />
+        </a>
+        <ul>
+          <li>
+            <a href="/" title="Homepage"> Home</a>
+          </li>
+          <li>
+            <a href="/about.html" title="About Tanja"> About</a>
+          </li>
+          <li>
+            <a href="/work.html" title="Tanja's work"> Work</a>
+          </li>
+          <li class="active">
+            <a href="/contact.html" title="Contact Tanja"> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div >
+      <h1 class="text-center mb-5">Let's get in touch!</h1>
       <div class="container">
-        <a class="navbar-brand" href="index.html">Tanja Sauer</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="/index.html">Home </a>
-            <a class="nav-item nav-link" href="/about.html">About me</a>
-            <a class="nav-item nav-link" href="/work.html">Work</a>
-            <a class="nav-item nav-link active" href="/contact.html"
-              >Contact<span class="sr-only">(current)</span></a
+      <div class="content contactPage">
+        <h4 class="mb-3">Leave me a message:</h4>
+        <div class="row">
+          <div class="col-md-8">
+            <form
+              id="fs-frm"
+              name="simple-contact-form"
+              action="https://formspree.io/f/xjvqllro"
+              method="POST"
+              class="border p-3 rounded mb-3"
             >
+              <div class="mb-3">
+                <label for="full-name">Your Name:</label>
+                <input type="text" name="name" required class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label"> Your email: </label>
+                <input
+                  type="email"
+                  name="replyto"
+                  class="form-control"
+                  required
+                  autofocus
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label"> Your message: </label>
+                <textarea
+                  name="message"
+                  class="form-control"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-branding">Send</button>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:tanja.sauer@live.de">tanja.sauer@live.de</a>
+            </p>
+            <h3>LinkedIn</h3>
+            <p>
+              <a href="https://www.linkedin.com/in/tanja-sauer/" target="_blank">
+                Tanja Sauer
+              </a>
+            </p>
+            <h3>Instagram</h3>
+            <p>
+              <a
+                href="https://www.instagram.com/tanja.sauer.design"
+                target="_blank"
+              >
+                @tanja.sauer.design
+              </a>
+            </p>
+              <h3>Linktree</h3>
+                <p>
+                  <a href="https://linktr.ee/tanja.sauer.design" target="_blank">tanja.sauer.design
+                  </a>
+                </p>
           </div>
         </div>
       </div>
-    </nav>
-    <h1 class="text-center">Contact me</h1>
-    <h3 class="text-center">Front-end developer from Cologne, Germany</h3>
-    <p class="text-center about-paragraph">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam aperiam
-      provident tempora? Cumque adipisci, non dolorem quia, odit qui alias
-      veniam excepturi rem dolor fugit dignissimos, sed voluptatum blanditiis
-      harum.
-    </p>
-
-    <div id="contact">
-      <h2 class="text-center">Contact me</h2>
-      <a href="mailto:tanja.sauer@live.de" class="email-link"
-        >tanja.sauer@live.de
-      </a>
     </div>
+    <footer class="container">
+      <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+        <div>
+          <h3>Work Inquiry</h3>
+          <p class="text-muted">Let's work together</p>
+        </div>
+        <div>
+          <a
+            href="/contact.html"
+            class="btn btn-branding mt-3"
+            title="Contact Tanja"
+          >
+            Contact me
+          </a>
+        </div>
+      </div>
+       <div class="d-flex justify-content-center mb-5">
+        <a
+          href="mailto:tanja.sauer@live.de"
+          class="email-link"
+          title="Email Tanja"
+        >
+         tanja.sauer@live.de
+        </a>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a
+          href="https://github.com/TaSaCoding"
+          target="_blank"
+          title="GitHub Profile"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.instragram.com/tanja.sauer.design"
+          target="_blank"
+          title="instragram Profile"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.instragram.com/tanja.sauer.design"
+          target="_blank"
+          title="LinkedIn Profile"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <p class="text-center mt-5">
+        Tanja Sauer - 2023
+      </p>
+    </footer>
   </body>
 </html>
