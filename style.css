@@ -17,7 +17,7 @@ h4 {
   margin: 0;
 }
 h1 {
-  font-size: 80px;
+  font-size: 96px;
   font-weight: 800;
   font-family: "Ultra", serif;
 }
@@ -71,6 +71,10 @@ nav li.active a {
 .logo {
   max-height: 60px;
   max-width: 60px;
+}
+.aboutpic img {
+  margin: 45px 30px;
+  border-radius: 20px;
 }
 .content h1 {
   font-size: 64px;
